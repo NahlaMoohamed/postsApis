@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<title>JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  	<script src="action.js"></script>
+  	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="header" id ="totalNumOfPosts"></div>
+  <div class="row">
+    <div class="col-md-3">
+        <div class="well">
+            <h3>Adding new Post</h3>
+            <div id = "postFormGroup">
+                <div class="form-group">
+                    <label for="title">Title: </label>
+                    <input class="form-control" type="text" id = "ipTitle">
+                  </div>
+                <div class="form-group">
+                  <label for="body">Body: </label>
+                  <input class="form-control" type="text" id = "ipBody">
+                </div>
+                <div class="form-group">
+                    <label for="userId">User ID: </label>
+                    <input class="form-control" type="number" id ="ipUserId">
+                </div>
+                <button onclick = "createNewPost()" class="btn btn-default">Add post</button>
+              </div>
+        </div>
+        <div class="well" style="margin-top:1%;">
+              <h3>Getting post by user ID</h3>
+              <div id = "editUserForm">
+                <div class="form-group">
+                  <label for="userId">User Id: </label>
+                  <input class="form-control" type="number" id = "userId">
+                  <input type="checkbox" id="myCheck" >All
+                </div>
+                <button onclick = "getPostbyUserId()" class="btn btn-default">Get Posts</button>
+              </div>
+        </div>
+    </div>
+    <div class="col-md-9" id ="postsDiv"></div>
+  </div>  
+</body>
+</html>
