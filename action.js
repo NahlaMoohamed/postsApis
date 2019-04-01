@@ -15,7 +15,7 @@ function getPosts(){
     showPosts();
   });
 }
-getPosts();
+//getPosts();
 
 function getPostbyUserId(){
   var all = document.getElementById('myCheck').checked;
