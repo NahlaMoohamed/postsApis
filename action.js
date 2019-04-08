@@ -1,7 +1,7 @@
 var posts = [];
 var totalNumOfPosts = 0;
 
-serviceUrl = 'http://jsonplaceholder.typicode.com/posts';
+serviceUrl = 'https://jsonplaceholder.typicode.com/posts';
 function getPosts(){
   fetch(serviceUrl).then((response) => {
    if(response.ok){
