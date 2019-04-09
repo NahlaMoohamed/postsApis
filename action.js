@@ -83,6 +83,7 @@ function showPosts(){
   postsLength.textContent = `${posts.length} Posts`;
 
   var postsDiv = document.getElementById('postsDiv');
+  postsDiv.innerHTML = "";
   for(let i=0; i< posts.length; i++){
     var div = document.createElement('div');
     div.className = 'well well-sm';
